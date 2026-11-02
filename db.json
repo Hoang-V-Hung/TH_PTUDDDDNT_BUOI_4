@@ -1,0 +1,371 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullName": "Hoàng Văn Hùng",
+      "className": "D23CCPM02",
+      "major": "Công nghệ thông tin định hướng ứng dụng",
+      "email": "HungHV.B23CC076@stu.ptit.edu.vn",
+      "phone": "0374585171",
+      "studentCode": "B23DCCC076",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "studentCode": "B23DCCC077",
+      "fullName": "Nguyễn Minh Anh",
+      "className": "D23CCPM02",
+      "major": "Công nghệ thông tin định hướng ứng dụng",
+      "email": "student2@stu.ptit.edu.vn",
+      "phone": "0912345600",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "studentCode": "B23DCCC078",
+      "fullName": "Trần Thu Hà",
+      "className": "D23CCPM02",
+      "major": "Công nghệ thông tin định hướng ứng dụng",
+      "email": "student3@stu.ptit.edu.vn",
+      "phone": "0912345601",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "studentCode": "B23DCCC079",
+      "fullName": "Lê Quốc Bảo",
+      "className": "D23CCPM02",
+      "major": "Công nghệ thông tin định hướng ứng dụng",
+      "email": "student4@stu.ptit.edu.vn",
+      "phone": "0912345602",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "studentCode": "B23DCCC080",
+      "fullName": "Phạm Ngọc Linh",
+      "className": "D23CCPM02",
+      "major": "Công nghệ thông tin định hướng ứng dụng",
+      "email": "student5@stu.ptit.edu.vn",
+      "phone": "0912345603",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    }
+  ],
+  "courses": [
+    {
+      "id": "RIPT1412",
+      "name": "Phát triển ứng dụng di động đa nền tảng",
+      "credits": 3,
+      "lecturer": "ThS. Trần Quang Đại",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Phát triển ứng dụng di động đa nền tảng bằng React Native cho Android và iOS. Thiết kế giao diện, quản lý trạng thái, điều hướng, tích hợp API và lưu trữ dữ liệu trên thiết bị.",
+      "code": "RIPT1412"
+    },
+    {
+      "id": "INT1448",
+      "name": "Phát triển phần mềm hướng dịch vụ",
+      "credits": 3,
+      "lecturer": "ThS. Nguyễn Việt Dũng",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Tìm hiểu kiến trúc hướng dịch vụ, phân tích và thiết kế dịch vụ sử dụng SOAP, REST và microservice. Xây dựng API, tích hợp các dịch vụ và xử lý xác thực trong hệ thống phân tán.",
+      "code": "INT1448"
+    },
+    {
+      "id": "RIPT1411",
+      "name": "Lập trình Web nâng cao",
+      "credits": 3,
+      "lecturer": "ThS. Phan Quang Thành",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Xây dựng ứng dụng Web có giao diện tương tác, quản lý trạng thái, xử lý bất đồng bộ và tích hợp API. Thực hiện xác thực người dùng, tối ưu hiệu năng và triển khai ứng dụng.",
+      "code": "RIPT1411"
+    },
+    {
+      "id": "RIPT1413",
+      "name": "Phân tích nghiệp vụ",
+      "credits": 3,
+      "lecturer": "ThS. Vũ Văn Thương",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Khảo sát nhu cầu của các bên liên quan, phân tích quy trình nghiệp vụ và xác định yêu cầu hệ thống. Mô hình hóa quy trình bằng BPMN, xây dựng use case, user story và tài liệu đặc tả yêu cầu.",
+      "code": "RIPT1413"
+    },
+    {
+      "id": "INT1416",
+      "name": "Đảm bảo chất lượng phần mềm",
+      "credits": 3,
+      "lecturer": "ThS. Phạm Đình Chung",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Tìm hiểu quy trình đảm bảo chất lượng phần mềm, lập kế hoạch kiểm thử và thiết kế ca kiểm thử. Thực hành kiểm thử thủ công, kiểm thử tự động, quản lý lỗi và đánh giá chất lượng sản phẩm.",
+      "code": "INT1416"
+    },
+    {
+      "id": "BAS1153",
+      "name": "Lịch sử Đảng Cộng sản Việt Nam",
+      "credits": 2,
+      "lecturer": "ThS. Nguyễn Thị Thơm",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "status": "active",
+      "description": "Nghiên cứu sự ra đời của Đảng Cộng sản Việt Nam và quá trình lãnh đạo đấu tranh giành độc lập, xây dựng và bảo vệ Tổ quốc. Tìm hiểu đường lối đổi mới và các bài học lịch sử qua từng giai đoạn.",
+      "code": "BAS1153"
+    },
+    {
+      "id": "INT1306",
+      "name": "Cấu trúc dữ liệu và giải thuật",
+      "credits": 3,
+      "lecturer": "ThS. Phan Lý Huỳnh",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "status": "completed",
+      "description": "Tìm hiểu danh sách liên kết, ngăn xếp, hàng đợi, cây và đồ thị. Cài đặt các giải thuật tìm kiếm, sắp xếp, duyệt đồ thị và phân tích độ phức tạp thời gian, bộ nhớ.",
+      "code": "INT1306"
+    },
+    {
+      "id": "RIPT1303",
+      "name": "Mạng máy tính theo CCNA",
+      "credits": 4,
+      "lecturer": "ThS. Lê Văn Hoàng",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "status": "completed",
+      "description": "Tìm hiểu mô hình OSI, TCP/IP, địa chỉ IPv4 và IPv6 theo định hướng CCNA. Thực hành chia mạng con, cấu hình switch, router, VLAN và định tuyến trên mô hình mạng mô phỏng.",
+      "code": "RIPT1303"
+    },
+    {
+      "id": "RIPT1309",
+      "name": "Học phần doanh nghiệp 2",
+      "credits": 3,
+      "lecturer": "TS. Ngô Quốc Dũng",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "status": "completed",
+      "description": "Thực hiện đề tài thực tế theo yêu cầu doanh nghiệp, vận dụng kiến thức chuyên ngành để giải quyết bài toán phần mềm. Rèn luyện kỹ năng làm việc nhóm, quản lý tiến độ và trình bày kết quả dự án.",
+      "code": "RIPT1309"
+    },
+    {
+      "id": "BAS1201",
+      "name": "Đại số",
+      "credits": 3,
+      "lecturer": "TS. Hoàng Phi Dũng",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "status": "completed",
+      "description": "Tìm hiểu ma trận, định thức, hệ phương trình tuyến tính và không gian vectơ. Thực hành các phép biến đổi tuyến tính, tính giá trị riêng, vectơ riêng và ứng dụng giải các bài toán đại số tuyến tính.",
+      "code": "BAS1201"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "courseId": "RIPT1412",
+      "dayOfWeek": 2,
+      "startTime": "07:30",
+      "endTime": "10:10",
+      "room": "A2-305",
+      "type": "Lý thuyết",
+      "note": "Ôn các thành phần React Native, quản lý trạng thái và điều hướng. Mang máy tính cá nhân để thực hành ví dụ trên lớp.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-2",
+      "courseId": "INT1448",
+      "dayOfWeek": 2,
+      "startTime": "13:00",
+      "endTime": "15:40",
+      "room": "B1-204",
+      "type": "Lý thuyết",
+      "note": "Đọc trước kiến trúc hướng dịch vụ, cách thiết kế REST API và sự khác nhau giữa SOAP, REST và microservice.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-3",
+      "courseId": "RIPT1411",
+      "dayOfWeek": 3,
+      "startTime": "07:30",
+      "endTime": "11:00",
+      "room": "A1-402",
+      "type": "Lý thuyết",
+      "note": "Ôn JavaScript, xử lý bất đồng bộ và tích hợp API. Chuẩn bị mã nguồn ứng dụng Web để thực hành trên lớp.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-4",
+      "courseId": "RIPT1413",
+      "dayOfWeek": 4,
+      "startTime": "09:30",
+      "endTime": "12:10",
+      "room": "B2-301",
+      "type": "Lý thuyết",
+      "note": "Chuẩn bị câu hỏi khảo sát các bên liên quan, sơ đồ quy trình nghiệp vụ và bản nháp use case của đề tài nhóm.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-5",
+      "courseId": "RIPT1412",
+      "dayOfWeek": 4,
+      "startTime": "13:00",
+      "endTime": "15:40",
+      "room": "PM-02",
+      "type": "Thực hành",
+      "note": "Cài sẵn Node.js, Android Studio và môi trường React Native.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-6",
+      "courseId": "INT1416",
+      "dayOfWeek": 5,
+      "startTime": "07:30",
+      "endTime": "10:10",
+      "room": "A2-201",
+      "type": "Lý thuyết",
+      "note": "Đọc trước kỹ thuật phân vùng tương đương và phân tích giá trị biên. Chuẩn bị các ca kiểm thử cho chức năng đăng nhập.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-7",
+      "courseId": "BAS1153",
+      "dayOfWeek": 6,
+      "startTime": "09:30",
+      "endTime": "11:10",
+      "room": "C1-103",
+      "type": "Lý thuyết",
+      "note": "Đọc giáo trình về sự ra đời của Đảng Cộng sản Việt Nam và chuẩn bị nội dung thảo luận nhóm theo giai đoạn lịch sử được giao.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    },
+    {
+      "id": "session-8",
+      "courseId": "INT1448",
+      "dayOfWeek": 7,
+      "startTime": "07:30",
+      "endTime": "10:10",
+      "room": "PM-01",
+      "type": "Thực hành",
+      "note": "Mang máy tính có môi trường chạy dịch vụ Web và Postman. Chuẩn bị REST API để thực hành tích hợp và kiểm tra các endpoint.",
+      "startDate": "2026-09-07",
+      "endDate": "2027-01-17"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "assignment-1",
+      "courseId": "RIPT1412",
+      "title": "Xây dựng ứng dụng quản lý học tập",
+      "dueDate": "2026-11-04T16:59:00.000Z",
+      "description": "Xây dựng ứng dụng React Native có 5 tab, các màn hình chi tiết và lưu dữ liệu bằng AsyncStorage. Nộp mã nguồn kèm hướng dẫn chạy ứng dụng.",
+      "status": "todo",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-2",
+      "courseId": "INT1448",
+      "title": "Xây dựng REST API quản lý thư viện",
+      "dueDate": "2026-11-06T16:59:00.000Z",
+      "description": "Thiết kế dịch vụ quản lý sách và độc giả với các endpoint thêm, xem, sửa, xóa. Mô tả dữ liệu yêu cầu, phản hồi và mã trạng thái HTTP; nộp mã nguồn, tài liệu API và bộ yêu cầu Postman.",
+      "status": "todo",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-3",
+      "courseId": "RIPT1411",
+      "title": "Xây dựng trang Web quản lý công việc",
+      "dueDate": "2026-11-02T16:59:00.000Z",
+      "description": "Xây dựng giao diện Web có chức năng đăng nhập, thêm, sửa, xóa và tìm kiếm công việc. Tích hợp REST API, xử lý trạng thái đang tải, lỗi và danh sách rỗng; nộp mã nguồn kèm hướng dẫn chạy.",
+      "status": "todo",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-4",
+      "courseId": "RIPT1413",
+      "title": "Phân tích nghiệp vụ hệ thống đăng ký học phần",
+      "dueDate": "2026-11-09T16:59:00.000Z",
+      "description": "Xác định các bên liên quan, nhu cầu nghiệp vụ và quy tắc đăng ký học phần. Vẽ sơ đồ BPMN, xây dựng use case, user story kèm tiêu chí chấp nhận và lập tài liệu đặc tả yêu cầu.",
+      "status": "todo",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-5",
+      "courseId": "INT1416",
+      "title": "Thiết kế ca kiểm thử chức năng đăng nhập",
+      "dueDate": "2026-11-01T16:59:00.000Z",
+      "description": "Áp dụng phân vùng tương đương và phân tích giá trị biên để thiết kế ca kiểm thử cho email và mật khẩu. Ghi rõ dữ liệu đầu vào, các bước thực hiện, kết quả mong đợi và báo cáo lỗi tìm được.",
+      "status": "todo",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-6",
+      "courseId": "BAS1153",
+      "title": "Thuyết trình về Cách mạng Tháng Tám năm 1945",
+      "dueDate": "2026-11-07T16:59:00.000Z",
+      "description": "Chuẩn bị bài thuyết trình nhóm về bối cảnh lịch sử, vai trò lãnh đạo của Đảng, diễn biến và ý nghĩa của Cách mạng Tháng Tám năm 1945. Nộp 5–7 slide kèm danh mục tài liệu tham khảo.",
+      "status": "done",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    },
+    {
+      "id": "assignment-7",
+      "courseId": "RIPT1412",
+      "title": "Thực hành các thành phần React Native",
+      "dueDate": "2026-10-30T16:59:00.000Z",
+      "description": "Tạo giao diện sử dụng View, Text, TextInput, Pressable và FlatList. Nộp ảnh chụp màn hình cùng mã nguồn.",
+      "status": "done",
+      "updatedAt": "2026-11-01T08:00:00.000Z"
+    }
+  ],
+  "grades": [
+    {
+      "id": "result-1",
+      "courseId": "INT1306",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "attendance": 10,
+      "midterm": 8,
+      "final": 8.5,
+      "total": 8.5,
+      "letter": "A"
+    },
+    {
+      "id": "result-2",
+      "courseId": "RIPT1303",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "attendance": 9,
+      "midterm": 7,
+      "final": 7.5,
+      "total": 7.5,
+      "letter": "B"
+    },
+    {
+      "id": "result-3",
+      "courseId": "RIPT1309",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "attendance": 10,
+      "midterm": 8.5,
+      "final": 8,
+      "total": 8.35,
+      "letter": "B+"
+    },
+    {
+      "id": "result-4",
+      "courseId": "BAS1201",
+      "semester": "Học kỳ 2 · 2025–2026",
+      "attendance": 10,
+      "midterm": 9,
+      "final": 8.5,
+      "total": 8.8,
+      "letter": "A"
+    },
+    {
+      "id": "result-5",
+      "courseId": "RIPT1412",
+      "semester": "Học kỳ 1 · 2026–2027",
+      "attendance": 9,
+      "midterm": 8,
+      "final": 8.5,
+      "total": 8.4,
+      "letter": "B+"
+    }
+  ]
+}
