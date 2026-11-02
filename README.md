@@ -6,38 +6,68 @@ Cây thư mục và tên thành phần theo sơ đồ của đề; phần mở r
 
 ## Chạy Android
 
-Cần Node.js >= 22.11, JDK 17, Android SDK theo cấu hình dự án và một thiết bị/AVD có kết nối ADB.
+Cần Node.js >= 22.11, Yarn Classic 1.x, JDK 17, Android SDK và điện thoại bật USB debugging hoặc máy ảo Android đang chạy.
 
-```sh
-npm install
-npm run api
+Mở cả ba terminal tại thư mục dự án. Với PowerShell trên máy hiện tại:
+
+**Chuẩn bị lần đầu** hoặc sau khi cập nhật thư viện:
+
+```powershell
+yarn install
+adb devices
 ```
 
-API dùng **json-server 0.17.4** cài cục bộ trong dự án, có độ trễ 800 ms:
+Thiết bị cần hiện trạng thái `device`; nếu hiện `unauthorized`, xác nhận cho phép USB debugging trên điện thoại.
 
-```sh
-json-server --watch db.json --host 0.0.0.0 --port 3000 --delay 800
+**Terminal 1 — chạy API, giữ terminal mở:**
+
+```powershell
+yarn api
 ```
 
-Trong terminal khác:
+API dùng **json-server 0.17.4**, đọc/ghi `db.json`, chạy tại `http://localhost:3000` và có độ trễ 800 ms. Nếu API của dự án đã chạy ở cổng 3000 thì dùng lại, không chạy thêm lần nữa.
 
-```sh
+**Terminal 2 — chạy Metro, giữ terminal mở:**
+
+```powershell
+yarn start --port 8081
+```
+
+Chỉ khi cần xóa cache Metro, dừng Metro bằng `Ctrl+C` trong terminal này rồi chạy:
+
+```powershell
+yarn start --port 8081 --reset-cache
+```
+
+**Terminal 3 — nối cổng, build và mở app:**
+
+```powershell
 adb reverse tcp:3000 tcp:3000
 adb reverse tcp:8081 tcp:8081
-npm start -- --reset-cache
+yarn android --no-packager --port 8081
 ```
 
-Trong terminal thứ ba:
+`--no-packager` dùng Metro đã chạy ở terminal 2, tránh mở thêm Metro hoặc hỏi chuyển sang cổng khác. `adb reverse` chỉ nối cổng trên thiết bị với máy tính; vẫn phải chạy API và Metro ở hai terminal đầu.
 
-```sh
-npm run android
-```
+| Cổng | Dùng cho | Lệnh chạy |
+| ---- | -------- | --------- |
+| 3000 | API dữ liệu | `yarn api` |
+| 8081 | Metro cung cấp mã JavaScript | `yarn start --port 8081` |
+
+**Nếu báo cổng 3000, 3001 hoặc 8081 đã được sử dụng:**
+
+- Không chọn đổi cổng sang 3001; cấu hình hiện tại dùng API 3000 và Metro 8081.
+- Nếu API/Metro của đúng dự án đang chạy ở đúng cổng thì giữ lại và bỏ qua bước khởi động tương ứng.
+- Nếu đã mở trùng hoặc chạy sai cổng, dùng `Ctrl+C` ở terminal chạy bản dư/sai rồi thực hiện lại các lệnh trên. Nếu cổng bị một chương trình khác chiếm, xác định chương trình trước khi dừng.
+- Khi cài Android, dùng đầy đủ `yarn android --no-packager --port 8081` để dùng đúng Metro đang mở.
+
+Các lần sau: chạy lại ba terminal theo thứ tự trên; không cần `yarn install` nếu thư viện không thay đổi. Sau khi rút/cắm lại điện thoại hoặc khởi động lại ADB, chạy lại hai lệnh `adb reverse`.
 
 `src/config.ts` là nơi duy nhất đặt `BASE_URL`, `TIMEOUT = 10000` và `CACHE_TTL`. Cấu hình Android mặc định `http://127.0.0.1:3000` dùng cùng `adb reverse`, chạy được với điện thoại thật hoặc máy ảo. Nếu không dùng reverse:
 
 - Android Emulator: đặt `BASE_URL` thành `http://10.0.2.2:3000`.
 - Điện thoại thật: đặt `http://<IP-LAN-máy-tính>:3000`, hai thiết bị cùng Wi-Fi và cho phép cổng 3000 qua tường lửa.
-- iOS Simulator: mặc định `http://localhost:3000`. Build iOS trên macOS sau khi chạy `bundle install`, `bundle exec pod install` trong `ios`, rồi `npm run ios`. Chưa kiểm chứng build iOS trên máy Windows.
+- iOS Simulator: mặc định `http://localhost:3000`. Build iOS trên macOS sau khi chạy `bundle install`, `bundle exec pod install` trong `ios`, rồi `yarn ios`. Chưa kiểm chứng build iOS trên máy Windows.
 
 Sau khi thêm NetInfo cần build lại ứng dụng native; chỉ reload JavaScript là chưa đủ. Nếu nhiều thiết bị kết nối, dùng `adb -s <device-id> reverse ...`.
 
@@ -167,9 +197,9 @@ Quy tắc áp dụng cho hồ sơ và trạng thái bài tập. Cần đặt gi�
 ## Kiểm tra và demo
 
 ```sh
-npm run typecheck
-npm run lint
-npm test -- --runInBand
+yarn typecheck
+yarn lint
+yarn test --runInBand
 ```
 
 Các bài kiểm thử kiểm tra client/timeout, cache, outbox, đồng bộ, xung đột, rollback, chống POST trùng, dữ liệu mẫu, form và GPA; kiểm thử React Native và Context xác nhận dữ liệu đồng bộ giữa các màn.
